@@ -1,0 +1,111 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: burlywood;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #c3a073;
+    width: 1200px;
+}
+
+.ratedr {
+    /*background-color: #555555;*/
+    /*background-image: url("https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinysrgb&h=350");*/
+    color: black;
+    padding-bottom: 10px;
+
+}
+
+/* Override the default bootstrap behavior where horizontal description lists
+   will truncate terms that are too long to fit in the left column
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    background-image: url("https://www.highlightpr.co.uk/wp-content/uploads/2018/01/iStock-friends-and-family-enjoying-dinner-small.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    margin-top: 20px;
+    padding-top: 40px;
+    margin-bottom: 100px;
+}
+
+.food{
+    width: 170px;
+    height: 150px;
+    display: inline-block;
+    float: left;
+    padding-right: 5px;
+}
+
+.yh1 {
+    color: white !important;
+    text-align: center;
+    background-color: #555555;
+    width: 400px;
+    margin-left: 315px;
+}
+
+.navbar-inverse {
+    background-color: #555555;
+}
+
+.btn-primary {
+    background-color: #555555;
+    border-color: black;
+    align-items: center;
+}
+
+hr{
+    display: none;
+}
+
+.lead {
+    margin-left: 227px;
+    background-color: #555555;
+    color: white;
+    width: 570px;
+    text-align: center;
+}
+
+.review {
+    padding: 2px;
+    padding-bottom: 10px;
+    background: burlywood;
+}
+
+.review h4{
+    color: white;
+    padding: 5px;
+    background: #555555
+}
+
+.review p{
+    font-size: .8em;
+    text-align: left;
+}
+
+.button{
+    text-align:center;
+}
+
+h3{
+    margin-bottom: 5px;
+}
+
+h2{
+    text-decoration: underline;
+}
