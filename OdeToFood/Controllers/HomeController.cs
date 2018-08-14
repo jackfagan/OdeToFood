@@ -35,6 +35,13 @@ namespace OdeToFood.Controllers
             return View();
         }
 
+        public ActionResult Reviews()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (_db != null)
