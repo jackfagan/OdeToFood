@@ -35,17 +35,6 @@ namespace OdeToFood.Controllers
             return View();
         }
 
-        public ActionResult Reviews(string searchTerm = null)
-        {
-            ViewBag.Message = "Your reviews page.";
-
-            var model = _db.Reviews
-                .ToList()
-                .OrderByDescending(r => r.Rating)
-                .Where(r => searchTerm == null || r.Name.StartsWith(searchTerm));
-            return View(model);
-        }
-
         protected override void Dispose(bool disposing)
         {
             if (_db != null)

@@ -155,6 +155,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CuisineController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RestaurantController.cs" />
     <Compile Include="Controllers\ReviewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -175,6 +176,10 @@
     <Compile Include="Migrations\201808150928234_Pub.Designer.cs">
       <DependentUpon>201808150928234_Pub.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808151300330_Author.cs" />
+    <Compile Include="Migrations\201808151300330_Author.Designer.cs">
+      <DependentUpon>201808151300330_Author.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AboutModel.cs" />
     <Compile Include="Models\OdeToFoodDb.cs" />
@@ -183,12 +188,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\32430511_1491260244319441_7610374168076353536_n.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\garfunkel edit.jpg" />
+    <Content Include="Content\vincefruit.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -224,10 +229,12 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Reviews.cshtml" />
+    <Content Include="Views\Home\Restaurant.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Cuisine\" />
+    <Folder Include="Views\Restaurant\" />
     <Folder Include="Views\Reviews\" />
   </ItemGroup>
   <ItemGroup>
@@ -255,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808150928234_Pub.resx">
       <DependentUpon>201808150928234_Pub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808151300330_Author.resx">
+      <DependentUpon>201808151300330_Author.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

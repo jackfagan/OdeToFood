@@ -10,107 +10,107 @@ using OdeToFood.Models;
 
 namespace OdeToFood.Controllers
 {
-    public class ReviewsController : Controller
+    public class RestaurantController : Controller
     {
         private OdeToFoodDb db = new OdeToFoodDb();
 
-        // GET: Reviews
-        public ActionResult Reviews()
+        // GET: Restaurant
+        public ActionResult Restaurant()
         {
-            return View("~/Views/Home/Reviews.cshtml", db.Reviews.ToList());
+            return View("~/Views/Home/Restaurant.cshtml", db.Restaurants.ToList());
         }
 
-        // GET: Reviews/Details/5
+        // GET: Restaurant/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            RestaurantReview restaurantReview = db.Reviews.Find(id);
-            if (restaurantReview == null)
+            Restaurant restaurant = db.Restaurants.Find(id);
+            if (restaurant == null)
             {
                 return HttpNotFound();
             }
-            return View(restaurantReview);
+            return View(restaurant);
         }
 
-        // GET: Reviews/Create
+        // GET: Restaurant/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Reviews/Create
+        // POST: Restaurant/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Rating,Pub,Comment,Author")] RestaurantReview restaurantReview)
+        public ActionResult Create([Bind(Include = "Id,Name,City,Country,LastUpdatedDateTime")] Restaurant restaurant)
         {
             if (ModelState.IsValid)
             {
-                db.Reviews.Add(restaurantReview);
+                db.Restaurants.Add(restaurant);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(restaurantReview);
+            return View(restaurant);
         }
 
-        // GET: Reviews/Edit/5
+        // GET: Restaurant/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            RestaurantReview restaurantReview = db.Reviews.Find(id);
-            if (restaurantReview == null)
+            Restaurant restaurant = db.Restaurants.Find(id);
+            if (restaurant == null)
             {
                 return HttpNotFound();
             }
-            return View(restaurantReview);
+            return View(restaurant);
         }
 
-        // POST: Reviews/Edit/5
+        // POST: Restaurant/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Rating,Pub,Comment,Author")] RestaurantReview restaurantReview)
+        public ActionResult Edit([Bind(Include = "Id,Name,City,Country,LastUpdatedDateTime")] Restaurant restaurant)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(restaurantReview).State = EntityState.Modified;
+                db.Entry(restaurant).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(restaurantReview);
+            return View(restaurant);
         }
 
-        // GET: Reviews/Delete/5
+        // GET: Restaurant/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            RestaurantReview restaurantReview = db.Reviews.Find(id);
-            if (restaurantReview == null)
+            Restaurant restaurant = db.Restaurants.Find(id);
+            if (restaurant == null)
             {
                 return HttpNotFound();
             }
-            return View(restaurantReview);
+            return View(restaurant);
         }
 
-        // POST: Reviews/Delete/5
+        // POST: Restaurant/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            RestaurantReview restaurantReview = db.Reviews.Find(id);
-            db.Reviews.Remove(restaurantReview);
+            Restaurant restaurant = db.Restaurants.Find(id);
+            db.Restaurants.Remove(restaurant);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

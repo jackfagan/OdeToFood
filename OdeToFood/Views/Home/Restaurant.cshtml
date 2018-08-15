@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Restaurant";
+}
+
+<h1>Here is all the restaurants</h1>
+
+<form method="get">
+    <input type="search" name="searchTerm" />
+    <input type="submit" name="Search By Name" />
+</form>
+
+@foreach (var item in Model)
+{
+    <div class="reviewbox">
+        <h4>@item.Name,  @item.City</h4>
+        <div><h4>The average score is: </h4></div>
+        @*<h4>Last Updated:@item.LastUpdated</h4>*@
+        <br />
+    </div>
+}
+

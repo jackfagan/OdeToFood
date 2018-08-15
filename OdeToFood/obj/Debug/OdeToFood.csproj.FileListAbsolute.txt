@@ -196,3 +196,4 @@ C:\Code\OdeToFood\OdeToFood\OdeToFood\bin\Microsoft.CodeDom.Providers.DotNetComp
 C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.csproj.CopyComplete
 C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.name.resources
 C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.Pub.resources
+C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.Author.resources

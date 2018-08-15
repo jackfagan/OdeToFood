@@ -134,3 +134,15 @@ input {
     color: black;
     border-color: #deb887;
 }
+
+.reviewbox {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: black;
+    padding: 10px;
+    margin: 20px;
+}
+
+.author{
+    float: right;
+}
