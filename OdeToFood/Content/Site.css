@@ -122,3 +122,15 @@ img.icons {
     margin-right: auto;
     width: 50%;
 }
+
+input[type="search"] {
+    background-color: #deb887;
+    color: black;
+    border-color: #deb887;
+}
+
+input {
+    background-color: #deb887;
+    color: black;
+    border-color: #deb887;
+}
