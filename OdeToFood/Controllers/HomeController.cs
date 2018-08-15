@@ -35,12 +35,14 @@ namespace OdeToFood.Controllers
             return View();
         }
 
-        public ActionResult Reviews()
+        public ActionResult Reviews(string searchTerm = null)
         {
             ViewBag.Message = "Your reviews page.";
 
-            var model = _db.Reviews.ToList();
-
+            var model = _db.Reviews
+                .ToList()
+                .OrderByDescending(r => r.Rating)
+                .Where(r => searchTerm == null || r.Name.StartsWith(searchTerm));
             return View(model);
         }
 
