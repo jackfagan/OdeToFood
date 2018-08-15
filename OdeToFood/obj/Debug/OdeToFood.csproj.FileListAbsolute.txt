@@ -194,3 +194,5 @@ C:\Code\OdeToFood\OdeToFood\OdeToFood\bin\Microsoft.AI.WindowsServer.xml
 C:\Code\OdeToFood\OdeToFood\OdeToFood\bin\Microsoft.AI.Web.xml
 C:\Code\OdeToFood\OdeToFood\OdeToFood\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.csproj.CopyComplete
+C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.name.resources
+C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.Pub.resources

@@ -4,6 +4,31 @@
     ViewBag.Title = "Add a review!";
 }
 
-<h1>Add a review!</h1>
+<h1>Photo Gallery</h1>
 
-<h2>Here you can add a review of a recent pub or resturant you and the gang have been.</h2>
+<h3>Here you can view photos from recent lunch and pub outings!</h3>
+
+<div>
+    <img class="mySlides" src="~/Content/32430511_1491260244319441_7610374168076353536_n.jpg" />
+    <img class="mySlides" src="~/Content/garfunkel edit.jpg" />
+    <img class="mySlides" src="https://cdn.cnn.com/cnnnext/dam/assets/171027052520-processed-foods-exlarge-tease.jpg" />
+    <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/1200px-Dolsot-bibimbap.jpg" />
+    <img class="mySlides" src="https://images.ctfassets.net/yvxng0wjdenp/2gpUkJE67qC6yeCmIuuIWq/c13b4ace7adc09b13df9249e986dc57e/FlexBurger_2560_x_1440.jpg" />
+</div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000); // Change image every 4 seconds
+    }
+</script>

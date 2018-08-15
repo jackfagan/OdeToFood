@@ -167,6 +167,14 @@
     <Compile Include="Migrations\201808130955281_LastUpdatedCol.Designer.cs">
       <DependentUpon>201808130955281_LastUpdatedCol.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808150921252_name.cs" />
+    <Compile Include="Migrations\201808150921252_name.Designer.cs">
+      <DependentUpon>201808150921252_name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808150928234_Pub.cs" />
+    <Compile Include="Migrations\201808150928234_Pub.Designer.cs">
+      <DependentUpon>201808150928234_Pub.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AboutModel.cs" />
     <Compile Include="Models\OdeToFoodDb.cs" />
@@ -175,10 +183,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\32430511_1491260244319441_7610374168076353536_n.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\garfunkel edit.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -239,6 +249,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808130955281_LastUpdatedCol.resx">
       <DependentUpon>201808130955281_LastUpdatedCol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808150921252_name.resx">
+      <DependentUpon>201808150921252_name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808150928234_Pub.resx">
+      <DependentUpon>201808150928234_Pub.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
