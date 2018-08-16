@@ -1,20 +1,13 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: burlywood;
+    background-color: white;
 }
 
 /* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #c3a073;
-    width: 1200px;
-}
 
 .ratedr {
-    /*background-color: #555555;*/
-    /*background-image: url("https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinysrgb&h=350");*/
+    background-color: white;
     color: black;
     padding-bottom: 10px;
 
@@ -32,6 +25,10 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.jumbotron {
+    background-image: url('backgroundfood.jpg');
 }
 
 .container .jumbotron, .container-fluid .jumbotron {
@@ -53,10 +50,10 @@ textarea {
 
 .yh1 {
     color: white !important;
-    text-align: center;
+    margin-left: 100px;
     background-color: #555555;
     width: 400px;
-    margin-left: 315px;
+    margin-bottom: 20px;
 }
 
 .navbar-inverse {
@@ -66,7 +63,7 @@ textarea {
 .btn-primary {
     background-color: #555555;
     border-color: black;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 hr{
@@ -98,8 +95,8 @@ hr{
     text-align: left;
 }
 
-.button{
-    text-align:center;
+.button {
+    margin-left: 100px;
 }
 
 h3{
@@ -145,4 +142,41 @@ input {
 
 .author{
     float: right;
+}
+
+.footer {
+    background-color: #555555;
+    width: 100%;
+    height: 125px;
+    position: absolute;
+    bottom: 10px;
+}
+
+p.lead {
+    margin-left: 100px;
+}
+
+.title{
+    text-align: center;
+    background-color: white;
+}
+
+.tableicon{
+    width: 60px;
+    height: 60px;
+    align-content: center;
+}
+
+.indivicon{
+    display: inline-block;
+    padding: 50px;
+}
+
+.iconhome {
+    text-align: center;
+}
+
+.icontext{
+    padding-top: 20px;
+    color: black;
 }

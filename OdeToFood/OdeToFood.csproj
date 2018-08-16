@@ -196,11 +196,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\backgroundfood.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\garfunkel edit.jpg" />
+    <Content Include="Content\Icons\HomePage\dining.svg" />
+    <Content Include="Content\Icons\HomePage\phone-call.svg" />
+    <Content Include="Content\Icons\HomePage\photo-camera.png" />
+    <Content Include="Content\Icons\HomePage\writing.svg" />
+    <Content Include="Content\Icons\SocialMedia\facebook-logo-button.png" />
+    <Content Include="Content\Icons\SocialMedia\instagram-logo.png" />
     <Content Include="Content\vincefruit.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

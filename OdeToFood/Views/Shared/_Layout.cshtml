@@ -29,20 +29,19 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
 
-        <footer>
-            <a href="https://www.instagram.com/jackfagan01/"> <img class ="icons" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png" /></a>
-            <a href="https://www.facebook.com/jack.fagan.10"> <img class ="icons" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" /></a>
-            <a href="https://twitter.com/jackfagan01"> <img class ="icons" src="https://c866088.ssl.cf3.rackcdn.com/assets/twiiter40x40.png" /></a>
-
-        </footer>
-    </div>
+    @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <div class="footer">
+        <a href="https://www.instagram.com/jackfagan01/"> <img class="icons" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png" /></a>
+        <a href="https://www.facebook.com/jack.fagan.10"> <img class="icons" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" /></a>
+        <a href="https://twitter.com/jackfagan01"> <img class="icons" src="https://c866088.ssl.cf3.rackcdn.com/assets/twiiter40x40.png" /></a>
+    </div>
+
 </body>
+
 </html>
