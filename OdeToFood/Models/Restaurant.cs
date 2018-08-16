@@ -13,5 +13,6 @@ namespace OdeToFood.Models
         public string Country { get; set; }
         public ICollection<RestaurantReview> Reviews { get; set; }
         public DateTime LastUpdatedDateTime { get; set; }
+        public bool Pub { get; set; }
     }
 }

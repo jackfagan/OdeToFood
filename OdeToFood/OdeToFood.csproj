@@ -180,6 +180,14 @@
     <Compile Include="Migrations\201808151300330_Author.Designer.cs">
       <DependentUpon>201808151300330_Author.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808161033096_Pub1.cs" />
+    <Compile Include="Migrations\201808161033096_Pub1.Designer.cs">
+      <DependentUpon>201808161033096_Pub1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808161121335_People.cs" />
+    <Compile Include="Migrations\201808161121335_People.Designer.cs">
+      <DependentUpon>201808161121335_People.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AboutModel.cs" />
     <Compile Include="Models\OdeToFoodDb.cs" />
@@ -230,12 +238,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Reviews.cshtml" />
     <Content Include="Views\Home\Restaurant.cshtml" />
+    <Content Include="Views\Restaurant\Edit.cshtml" />
+    <Content Include="Views\Restaurant\Create.cshtml" />
+    <Content Include="Views\Reviews\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Cuisine\" />
-    <Folder Include="Views\Restaurant\" />
-    <Folder Include="Views\Reviews\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -265,6 +274,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808151300330_Author.resx">
       <DependentUpon>201808151300330_Author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808161033096_Pub1.resx">
+      <DependentUpon>201808161033096_Pub1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808161121335_People.resx">
+      <DependentUpon>201808161121335_People.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

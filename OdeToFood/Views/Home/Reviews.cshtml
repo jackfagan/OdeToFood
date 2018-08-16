@@ -7,16 +7,18 @@
 <h2>Reviews!</h2>
 
 <form method="get">
-    <input type="search"name="searchTerm" />
+    <input type="search" name="searchTerm" />
     <input type="submit" name="Search By Name" />
 </form>
 
+<p class="button"><a href="~/Reviews/Create"><class="btn btn-primary btn-lg">Add a new Review &raquo;</a></p>
+
 @foreach (var item in Model)
-    {
-        <div class="reviewbox">
-            <h4>@item.Name</h4>
-            <div>@item.Rating</div>
-            @item.Comment <div class="author">@item.Author</div>
-            <br />
-        </div>
-    }
+{
+    <div class="reviewbox">
+        <h4>@item.Name</h4>
+        <div>@item.Rating</div>
+        @item.Comment <div class="author">@item.Author</div>
+        <br />
+    </div>
+}

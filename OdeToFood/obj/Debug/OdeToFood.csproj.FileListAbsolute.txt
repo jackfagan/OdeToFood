@@ -197,3 +197,5 @@ C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.csproj.CopyComplete
 C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.name.resources
 C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.Pub.resources
 C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.Author.resources
+C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.Pub1.resources
+C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.People.resources

@@ -9,12 +9,27 @@
     <input type="submit" name="Search By Name" />
 </form>
 
+<p class="button"><a href="~/Restaurant/Create"><class ="btn btn-primary btn-lg">Add a new Restaurant &raquo;</a></p>
+
+
 @foreach (var item in Model)
 {
+
+    //if (item.Pub == true)
+    //{
+    //    string Pub = "Yes";
+    //}
+
+    //else
+    //{
+    //    string Pub = "No";
+    //}
+
     <div class="reviewbox">
         <h4>@item.Name,  @item.City</h4>
         <div><h4>The average score is: </h4></div>
         @*<h4>Last Updated:@item.LastUpdated</h4>*@
+        @*<h4 style="float:right">Pub: {$Pub}</h4>*@
         <br />
     </div>
 }
