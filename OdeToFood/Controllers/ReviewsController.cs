@@ -15,7 +15,7 @@ namespace OdeToFood.Controllers
         private OdeToFoodDb db = new OdeToFoodDb();
 
         // GET: Reviews
-        public ActionResult Reviews()
+        public ActionResult Index()
         {
             return View("~/Views/Home/Reviews.cshtml", db.Reviews.ToList());
         }
@@ -52,7 +52,7 @@ namespace OdeToFood.Controllers
             {
                 db.Reviews.Add(restaurantReview);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Reviews");
             }
 
             return View(restaurantReview);

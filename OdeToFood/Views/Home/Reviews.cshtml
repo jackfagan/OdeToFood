@@ -4,14 +4,20 @@
     ViewBag.Title = "Reviews";
 }
 
-<h2>Reviews!</h2>
+<div class="toppad">
 
-<form method="get">
-    <input type="search" name="searchTerm" />
-    <input type="submit" name="Search By Name" />
-</form>
+    <h1 class="subhead">Reviews</h1>
 
-<p class="button"><a href="~/Reviews/Create"><class="btn btn-primary btn-lg">Add a new Review &raquo;</a></p>
+    <div class="search">
+        <form method="get">
+            <input type="search" name="searchTerm" />
+            <input type="submit" name="Search By Name" />
+        </form>
+    </div>
+
+    <p class="addreview"><a href="~/Reviews/Create"><class ="btn btn-primary btn-lg">Add a new Review &raquo;</a></p>
+
+</div>
 
 @foreach (var item in Model)
 {

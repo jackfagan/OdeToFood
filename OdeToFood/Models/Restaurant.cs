@@ -14,5 +14,6 @@ namespace OdeToFood.Models
         public ICollection<RestaurantReview> Reviews { get; set; }
         public DateTime LastUpdatedDateTime { get; set; }
         public bool Pub { get; set; }
+        public bool VFriendly { get; set; }
     }
 }

@@ -188,6 +188,10 @@
     <Compile Include="Migrations\201808161121335_People.Designer.cs">
       <DependentUpon>201808161121335_People.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808161517279_VFriendy.cs" />
+    <Compile Include="Migrations\201808161517279_VFriendy.Designer.cs">
+      <DependentUpon>201808161517279_VFriendy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AboutModel.cs" />
     <Compile Include="Models\OdeToFoodDb.cs" />
@@ -202,12 +206,16 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\garfunkel edit.jpg" />
+    <Content Include="Content\Icons\HomePage\beer.png" />
+    <Content Include="Content\Icons\HomePage\clock.png" />
     <Content Include="Content\Icons\HomePage\dining.svg" />
     <Content Include="Content\Icons\HomePage\phone-call.svg" />
     <Content Include="Content\Icons\HomePage\photo-camera.png" />
+    <Content Include="Content\Icons\HomePage\rating.png" />
     <Content Include="Content\Icons\HomePage\writing.svg" />
     <Content Include="Content\Icons\SocialMedia\facebook-logo-button.png" />
     <Content Include="Content\Icons\SocialMedia\instagram-logo.png" />
+    <Content Include="Content\Icons\SocialMedia\twitter-logo-button.png" />
     <Content Include="Content\vincefruit.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -248,6 +256,9 @@
     <Content Include="Views\Restaurant\Edit.cshtml" />
     <Content Include="Views\Restaurant\Create.cshtml" />
     <Content Include="Views\Reviews\Create.cshtml" />
+    <Content Include="Views\Reviews\Edit.cshtml" />
+    <Content Include="Views\Restaurant\Delete.cshtml" />
+    <Content Include="Views\Reviews\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -287,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808161121335_People.resx">
       <DependentUpon>201808161121335_People.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808161517279_VFriendy.resx">
+      <DependentUpon>201808161517279_VFriendy.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,6 +1,5 @@
 ﻿body {
     padding-top: 50px;
-    padding-bottom: 20px;
     background-color: white;
 }
 
@@ -9,7 +8,7 @@
 .ratedr {
     background-color: white;
     color: black;
-    padding-bottom: 10px;
+    padding: 20px;
 
 }
 
@@ -29,6 +28,7 @@ textarea {
 
 .jumbotron {
     background-image: url('backgroundfood.jpg');
+    height: 780px;
 }
 
 .container .jumbotron, .container-fluid .jumbotron {
@@ -41,19 +41,26 @@ textarea {
 }
 
 .food{
-    width: 170px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
     float: left;
-    padding-right: 5px;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
 .yh1 {
     color: white !important;
     margin-left: 100px;
     background-color: #555555;
-    width: 400px;
+    width: 512px;
+    font-size: 80px;
     margin-bottom: 20px;
+    margin-top: 238px;
+}
+
+.jumbotron h1, .jumbotron .h1 {
+    font-size: 80px;
 }
 
 .navbar-inverse {
@@ -99,18 +106,29 @@ hr{
     margin-left: 100px;
 }
 
+.addreview{
+    margin-left: 20px;
+    color: black;
+}
+
 h3{
     margin-bottom: 5px;
 }
 
-h2{
-    text-decoration: underline;
+.subhead{
+    margin-left: 20px
 }
 
 img.icons {
     float: right;
     padding: 5px;
     background-color: #555555;
+    height: 50px;
+    width: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .mySlides {
@@ -121,21 +139,21 @@ img.icons {
 }
 
 input[type="search"] {
-    background-color: #deb887;
+    background-color: #dcd7d7;
     color: black;
-    border-color: #deb887;
+    border-color: #9c9b9b;
 }
 
 input {
-    background-color: #deb887;
+    background-color: #dcd7d7;
     color: black;
-    border-color: #deb887;
+    border-color: #9c9b9b;
 }
 
 .reviewbox {
     border-style: dashed;
     border-width: 1px;
-    border-color: black;
+    border-color: #9c9b9b;
     padding: 10px;
     margin: 20px;
 }
@@ -146,10 +164,11 @@ input {
 
 .footer {
     background-color: #555555;
+    position: relative;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 125px;
-    position: absolute;
-    bottom: 10px;
+    height: 80px;
 }
 
 p.lead {
@@ -179,4 +198,31 @@ p.lead {
 .icontext{
     padding-top: 20px;
     color: black;
+}
+
+.intro{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.iconpages {
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #555555;
+    border-width: 3px, 2px;
+}
+
+.topppad{
+    padding-left: 20px;
+}
+
+.search {
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.bodycontact{
+    padding-left: 20px;
 }

@@ -2,14 +2,16 @@
     ViewBag.Title = "Restaurant";
 }
 
-<h1>Here is all the restaurants</h1>
+<h1 class="subhead">The Restaurants</h1>
 
-<form method="get">
-    <input type="search" name="searchTerm" />
-    <input type="submit" name="Search By Name" />
-</form>
+<div class="search">
+    <form method="get">
+        <input type="search" name="searchTerm" />
+        <input type="submit" name="Search By Name" />
+    </form>
+</div>
 
-<p class="button"><a href="~/Restaurant/Create"><class ="btn btn-primary btn-lg">Add a new Restaurant &raquo;</a></p>
+<p class="addreview"><a href="~/Restaurant/Create"><class ="btn btn-primary btn-lg">Add a new Restaurant &raquo;</a></p>
 
 
 @foreach (var item in Model)
@@ -30,6 +32,8 @@
         <div><h4>The average score is: </h4></div>
         @*<h4>Last Updated:@item.LastUpdated</h4>*@
         @*<h4 style="float:right">Pub: {$Pub}</h4>*@
+        <p class="editereview"><a href="~/Restaurant/Edit"><class ="btn btn-primary btn-lg">Edit &raquo;</a></p>
+
         <br />
     </div>
 }
