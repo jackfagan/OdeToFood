@@ -15,16 +15,15 @@
         </form>
     </div>
 
-    <p class="addreview"><a href="~/Reviews/Create"><class ="btn btn-primary btn-lg">Add a new Review &raquo;</a></p>
-
+    <p class="addreview"><a href="~/Reviews/Create">Add a new Review</a></p>
 </div>
 
 @foreach (var item in Model)
 {
-    <div class="reviewbox">
-        <h4>@item.Name</h4>
-        <div>@item.Rating</div>
-        @item.Comment <div class="author">@item.Author</div>
-        <br />
-    </div>
+<div class="reviewbox">
+    <h4>@item.Name</h4>
+    <div>@item.Rating</div>
+    @item.Comment <div class="author">@item.Author</div>
+    <p class="deleteeditreview"><a href="~/Reviews/Delete">Delete </a><a href="~/Reviews/Edit">Edit</a><p/>
+</div>
 }

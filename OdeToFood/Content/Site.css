@@ -28,7 +28,7 @@ textarea {
 
 .jumbotron {
     background-image: url('backgroundfood.jpg');
-    height: 780px;
+    height: 1050px;
 }
 
 .container .jumbotron, .container-fluid .jumbotron {
@@ -41,8 +41,8 @@ textarea {
 }
 
 .food{
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     display: inline-block;
     float: left;
     padding-right: 20px;
@@ -164,8 +164,7 @@ input {
 
 .footer {
     background-color: #555555;
-    position: relative;
-    left: 0;
+    position: unset;
     bottom: 0;
     width: 100%;
     height: 80px;
@@ -225,4 +224,24 @@ p.lead {
 
 .bodycontact{
     padding-left: 20px;
+}
+
+@media screen and (max-height: 1000px) {
+    .jumbotron {
+        height: 780px;
+    }
+}
+
+@media screen and (max-width: 605px){
+    .jumbotron h1, .jumbotron .h1 {
+        font-size: 40px;
+        text-align: center;
+        width: 255px;
+    }
+
+}
+
+.reviewHome {
+    color: #f9ba49;
+    font-weight: bold;
 }
