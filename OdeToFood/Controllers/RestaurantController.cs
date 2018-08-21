@@ -50,6 +50,7 @@ namespace OdeToFood.Controllers
         {
             if (ModelState.IsValid)
             {
+                restaurant.LastUpdatedDateTime = DateTime.Now;
                 db.Restaurants.Add(restaurant);
                 db.SaveChanges();
                 return RedirectToAction("Restaurant");
@@ -82,6 +83,7 @@ namespace OdeToFood.Controllers
         {
             if (ModelState.IsValid)
             {
+                restaurant.LastUpdatedDateTime = DateTime.Now;
                 db.Entry(restaurant).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Restaurant");

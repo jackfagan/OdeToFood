@@ -37,9 +37,9 @@
         }
 
         <div><h4>The average score is: </h4></div>
-        @*<h4>Last Updated:@item.LastUpdated</h4>*@
-
+        <h4>Last Updated:@item.LastUpdatedDateTime</h4>
         <h4 style="float:right">Pub: @item.Pub</h4>
+        <p></p>
         <p class="deleteeditreview"><a href="~/Restaurant/Delete?id=@item.Id">Delete </a><a href="~/Restaurant/Edit?id=@item.Id">| Edit</a><p />
     </div>
 }

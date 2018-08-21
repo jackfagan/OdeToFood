@@ -253,6 +253,7 @@ p.lead {
 .reviewHome {
     color: #f9ba49;
     font-weight: bold;
+    display: block;
 }
 
 .bodyabout {
