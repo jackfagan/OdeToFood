@@ -85,6 +85,10 @@ hr{
     text-align: center;
 }
 
+h4 {
+    display: inline;
+}
+
 .review {
     padding: 2px;
     padding-bottom: 10px;
@@ -94,7 +98,7 @@ hr{
 .review h4{
     color: white;
     padding: 5px;
-    background: #555555
+    background: #555555;
 }
 
 .review p{
@@ -276,4 +280,12 @@ p.lead {
 
 .backtolist{
     font-size: 20px;
+}
+
+.vegan{
+    display: inline;
+    color: limegreen;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
 }

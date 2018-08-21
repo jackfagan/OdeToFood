@@ -17,25 +17,30 @@
 @foreach (var item in Model)
 {
 
-    //if (item.Pub == true)
-    //{
-    //    string Pub = "Yes";
-    //}
+    <div class="reviewbox">
 
-    //else
-    //{
-    //    string Pub = "No";
-    //}
+            @*@if (item.VFriendly = true)
+            {
+                var vegan = "V";
+            }
+            else { var vegan = ""; }*@
 
-<div class="reviewbox">
-    <h4>@item.Name</h4>
-    <div><h4>The average score is: </h4></div>
-    @*<h4>Last Updated:@item.LastUpdated</h4>*@
-    @*@if (item.VFriendly)
-    {
-    }*@
-    <h4 style="float:right">Pub: @item.Pub</h4>
-    <p class="deleteeditreview"><a href="~/Restaurant/Delete?id=@item.Id">Delete </a><a href="~/Restaurant/Edit?id=@item.Id">| Edit</a><p />
-</div>
+        <h4>@item.Name</h4>
+        <p class="vegan" id="vegan"></p>
+
+        @if (item.VFriendly = true)
+        {
+            <script>
+                var veganfood = "Vegan Friendly";
+                document.getElementById("vegan").innerHTML = veganfood;
+            </script>
+        }
+
+        <div><h4>The average score is: </h4></div>
+        @*<h4>Last Updated:@item.LastUpdated</h4>*@
+
+        <h4 style="float:right">Pub: @item.Pub</h4>
+        <p class="deleteeditreview"><a href="~/Restaurant/Delete?id=@item.Id">Delete </a><a href="~/Restaurant/Edit?id=@item.Id">| Edit</a><p />
+    </div>
 }
 

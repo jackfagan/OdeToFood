@@ -46,7 +46,7 @@ namespace OdeToFood.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Rating,Pub,Comment,Author")] RestaurantReview restaurantReview)
+        public ActionResult Create([Bind(Include = "Name,Rating,Comment,Author")] RestaurantReview restaurantReview)
         {
             if (ModelState.IsValid)
             {

@@ -52,7 +52,7 @@ namespace OdeToFood.Controllers
             {
                 db.Restaurants.Add(restaurant);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Restaurant");
             }
 
             return View(restaurant);
