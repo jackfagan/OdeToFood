@@ -13,8 +13,9 @@ namespace OdeToFood.Controllers
         public ActionResult Index()
         {
             var viewModel = new HomeViewModel();
-            viewModel.TopRatedReview = _db.Reviews.OrderByDescending(x => x.Rating)/*.ThenBy(x => x.Name)*/.FirstOrDefault();
-            viewModel.RecentRatedReview = _db.Restaurants.OrderByDescending(r => r.LastUpdatedDateTime).FirstOrDefault();
+            viewModel.TopRatedReview = _db.Reviews.OrderByDescending(x => x.Rating).FirstOrDefault();
+            viewModel.RecentRatedReviewName = _db.Restaurants.OrderByDescending(r => r.LastUpdatedDateTime).FirstOrDefault();
+            viewModel.RecentReviewScore = _db.Reviews.OrderByDescending(y => y.LastUpdated).FirstOrDefault();
 
 
             //viewmodel.topratedpub = _db.reviews.max(rating);

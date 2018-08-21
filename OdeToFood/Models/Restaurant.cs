@@ -9,8 +9,6 @@ namespace OdeToFood.Models
     {
         public int Id { get; set;  }
         public string Name { get; set; }
-        public string City { get; set; }
-        public string Country { get; set; }
         public ICollection<RestaurantReview> Reviews { get; set; }
         public DateTime LastUpdatedDateTime { get; set; }
         public bool Pub { get; set; }

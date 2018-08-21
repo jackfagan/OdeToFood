@@ -28,11 +28,14 @@
     //}
 
 <div class="reviewbox">
-    <h4>@item.Name,  @item.City</h4>
+    <h4>@item.Name</h4>
     <div><h4>The average score is: </h4></div>
     @*<h4>Last Updated:@item.LastUpdated</h4>*@
-    @*<h4 style="float:right">Pub: {$Pub}</h4>*@
-    <p class="deleteeditreview"><a href="~/Restaurant/Delete">Delete </a><a href="~/Restaurant/Edit">| Edit</a><p />
+    @*@if (item.VFriendly)
+    {
+    }*@
+    <h4 style="float:right">Pub: @item.Pub</h4>
+    <p class="deleteeditreview"><a href="~/Restaurant/Delete?id=@item.Id">Delete </a><a href="~/Restaurant/Edit?id=@item.Id">| Edit</a><p />
 </div>
 }
 

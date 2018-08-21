@@ -84,7 +84,7 @@ namespace OdeToFood.Controllers
             {
                 db.Entry(restaurant).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Restaurant");
             }
             return View(restaurant);
         }
@@ -112,7 +112,7 @@ namespace OdeToFood.Controllers
             Restaurant restaurant = db.Restaurants.Find(id);
             db.Restaurants.Remove(restaurant);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Restaurant");
         }
 
         protected override void Dispose(bool disposing)

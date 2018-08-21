@@ -192,6 +192,14 @@
     <Compile Include="Migrations\201808161517279_VFriendy.Designer.cs">
       <DependentUpon>201808161517279_VFriendy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808211230249_LastUpdated.cs" />
+    <Compile Include="Migrations\201808211230249_LastUpdated.Designer.cs">
+      <DependentUpon>201808211230249_LastUpdated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808211314115_VFriendly.cs" />
+    <Compile Include="Migrations\201808211314115_VFriendly.Designer.cs">
+      <DependentUpon>201808211314115_VFriendly.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AboutModel.cs" />
     <Compile Include="Models\OdeToFoodDb.cs" />
@@ -302,6 +310,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808161517279_VFriendy.resx">
       <DependentUpon>201808161517279_VFriendy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808211230249_LastUpdated.resx">
+      <DependentUpon>201808211230249_LastUpdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808211314115_VFriendly.resx">
+      <DependentUpon>201808211314115_VFriendly.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -200,3 +200,5 @@ C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.Author.reso
 C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.Pub1.resources
 C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.People.resources
 C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.VFriendy.resources
+C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.LastUpdated.resources
+C:\Code\OdeToFood\OdeToFood\OdeToFood\obj\Debug\OdeToFood.Migrations.VFriendly.resources

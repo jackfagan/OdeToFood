@@ -69,11 +69,10 @@
 
 <div class="ratedr">
     <img class="food" src="~/Content/Icons/HomePage/clock.png" />
-    <h2>Recent Rated Restaurants</h2>
+    <h2>Recent Rated Review</h2>
     <h4>The current restaurant below is the restaurant most recently ranked by DAM employees. This is subject to change when another review is uploaded to the Add review section.</h4>
     <h4 class="reviewHome">
-        Current Review: @Model.RecentRatedReview.Name |
-        @Model.RecentRatedReview.Reviews
+        Current Review: @Model.RecentRatedReviewName.Name | @Model.RecentReviewScore.Rating
     </h4>
 </div>
 

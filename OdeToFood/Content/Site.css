@@ -119,7 +119,7 @@ h3{
     margin-left: 20px
 }
 
-img.icons {
+.icons {
     float: right;
     padding: 5px;
     background-color: #555555;
@@ -224,11 +224,16 @@ p.lead {
 
 .bodycontact{
     padding-left: 20px;
+    height: 83vh;
 }
 
 @media screen and (max-height: 1000px) {
     .jumbotron {
         height: 780px;
+    }
+
+    .bodycontact{
+        height: 78.2vh;
     }
 }
 
@@ -244,4 +249,31 @@ p.lead {
 .reviewHome {
     color: #f9ba49;
     font-weight: bold;
+}
+
+.bodyabout {
+    height: 87.7vh;
+}
+
+.carousel{
+    padding-top: 60px;
+}
+
+.checkbox input[type="checkbox"]{
+    margin: 0px;
+    height: 20px;
+    width: 20px;
+}
+
+.form-horizontal{
+    height: 769px;
+    padding-left: 100px;
+}
+
+.editbox{
+    margin-left: 340px;
+}
+
+.backtolist{
+    font-size: 20px;
 }
