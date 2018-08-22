@@ -53,7 +53,7 @@ namespace OdeToFood.Controllers
                 restaurantReview.LastUpdated = DateTime.Now;
                 db.Reviews.Add(restaurantReview);
                 db.SaveChanges();
-                return RedirectToAction("Reviews");
+                return RedirectToAction("Index");
             }
 
             return View(restaurantReview);
@@ -86,7 +86,7 @@ namespace OdeToFood.Controllers
                 restaurantReview.LastUpdated = DateTime.Now;
                 db.Entry(restaurantReview).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Reviews");
+                return RedirectToAction("Index");
             }
             return View(restaurantReview);
         }
@@ -114,7 +114,7 @@ namespace OdeToFood.Controllers
             RestaurantReview restaurantReview = db.Reviews.Find(id);
             db.Reviews.Remove(restaurantReview);
             db.SaveChanges();
-            return RedirectToAction("Reviews");
+            return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)

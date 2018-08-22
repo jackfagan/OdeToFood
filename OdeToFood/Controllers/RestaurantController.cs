@@ -46,7 +46,7 @@ namespace OdeToFood.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,City,Country,LastUpdatedDateTime")] Restaurant restaurant)
+        public ActionResult Create([Bind(Include = "Id,Name,Pub,VFriendly,LastUpdatedDateTime")] Restaurant restaurant)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace OdeToFood.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,City,Country,LastUpdatedDateTime")] Restaurant restaurant)
+        public ActionResult Edit([Bind(Include = "Id,Name,Pub,VFriendly")] Restaurant restaurant)
         {
             if (ModelState.IsValid)
             {
@@ -114,7 +114,7 @@ namespace OdeToFood.Controllers
             Restaurant restaurant = db.Restaurants.Find(id);
             db.Restaurants.Remove(restaurant);
             db.SaveChanges();
-            return RedirectToAction("Restaurant");
+            return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)
