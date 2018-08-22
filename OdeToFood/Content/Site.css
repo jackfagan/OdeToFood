@@ -3,23 +3,16 @@
     background-color: white;
 }
 
-/* Set padding to keep content from hitting the edges */
-
 .ratedr {
     background-color: white;
     color: black;
     padding: 20px;
-
 }
 
-/* Override the default bootstrap behavior where horizontal description lists
-   will truncate terms that are too long to fit in the left column
-*/
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
